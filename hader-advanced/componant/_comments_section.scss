@@ -1,0 +1,65 @@
+.social__contant{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 20rem ;
+    padding: 6rem 0 ;
+}
+.discription{
+    font-size: var(--font-size-20);
+    line-height: 1.9;
+}
+.email__contant{
+    font-weight: var(--font-weight-bold);
+    margin: 2.5rem 0 ;
+}
+.social__link:hover{
+    transform:scale(1.2);
+
+
+}
+.social__link{
+        transition: var(--transition-timing);
+        gap: 2rem;
+}
+
+.contact__inputs{
+    display: flex;
+    gap: 2rem ;
+}
+.contact__input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 0.1rem solid var(--color-input-border);
+    flex:1;
+
+}
+.contact__textarea{
+    width: 100%;
+    margin-top: 4rem;
+
+}
+.button__input{
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 1.7rem 1.8rem;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-20);
+    margin-top: 4rem;
+
+}
+
+form:invalid::after{
+    content: " * ";
+    color: var(--color-red);
+    margin-top: 1rem;
+    font-size: var(--font-size-50);
+
+
+}
+footer{
+    padding: 1rem 0;
+    border-top: #000 0.1rem solid;
+    font-size: var(--font-size-15);
+}

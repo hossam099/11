@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font:inherit
+}
+*,
+*::after, 
+*::before{
+    box-sizing: border-box;
+}
+
+a{
+    color:inherit;
+    display: inline-block;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+ul,li{
+    list-style: none;
+}
+/*end reset*/
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+body,[type="submit"]{
+    font-size: 1.6rem;
+    font-family: var(--font-family-raleway);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: var(--container-width);
+    display:grid;
+    row-gap: 0rem 0;
+    margin: 0 auto;
+    padding-inline:  var(--gutter);
+}

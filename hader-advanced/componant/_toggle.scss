@@ -1,0 +1,125 @@
+.toggle{
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+.toggle__title{
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-18);
+}
+.toggle__checkbox{
+    display: none;
+}
+.toggle__label{
+
+    display: inline-block;
+    position: relative;
+    background-color: var(--color-black);
+    width: 4.5rem;
+    height: 2.2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    transition: 0.3s;
+}
+
+.toggle__label::after{
+    content: "";
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle__label::after{
+    counter-reset: none;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    display: block ;
+    transition: 0.3s;
+
+}
+.toggle__checkbox:checked + .toggle__label{
+    background-color: var(--color-white);
+
+}
+.toggle__checkbox:checked + .toggle__label::after{
+    transform: translateX(2.3rem);
+    background-color: var(--color-green);
+}
+/*end_toggle*/
+/*bio section*/
+
+.bio{
+    padding: 6rem 0 5rem ;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.bio__heading{
+    font-size: var(--font-size-65);
+    font-weight: var(--font-weight-bold);
+
+}
+.bio__objective{
+    font-family: var(--font-fam-family-poppins);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-20);
+    margin: 3rem 0 4rem;
+
+}
+.bio__name{
+    font-weight: var(--font-weight-semi-bold);
+
+}
+.bio__website{
+    color: var(--color-green);
+}
+.bio__facebook{
+    color: var(--color-light-blue);
+}
+.bio__linkedin{
+    color: var(--color-dark-blue);
+}
+.bio__instagram{
+    color: var(--color-red);
+}
+.bio__twitter{
+    color: var(--color-dark-green);
+}
+.bio__links{
+    font-size : 2.2rem;
+    font-weight:var(--font-weight-semi-bold);
+    text-decoration: none;
+}
+.say-hi-link{
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 0.7rem 4.7rem;
+}
+.found-out-link{
+    padding: 0.7rem 0;
+    margin-inline-start: 1.8rem;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0.5rem);
+    }
+    35%{
+        transform: translateY(-0.5rem);}
+    70%{
+        transform: translateY(0);}
+    100%{
+        transform: translateY(0);
+    }
+}
+.arrow{
+    display:inline-block;
+    animation: jump 0.8s infinite alternate ;
+}

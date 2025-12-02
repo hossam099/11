@@ -1,0 +1,16 @@
+.clints__opinion{
+    grid-column : 1/-1 ;
+    font-size: var(--font-size-40);
+    line-height: 1.7;
+
+}
+.clints__rapare{
+    display: flex;
+    overflow-x:auto ;
+    scroll-snap-type: x mandatory;
+}
+.clints__opinion{
+    flex-basis: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}

@@ -1,0 +1,90 @@
+
+.bio{
+    padding: 6rem 0 5rem ;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.bio__heading{
+    font-size: var(--font-size-65);
+    font-weight: var(--font-weight-bold);
+
+}
+.bio__objective{
+    font-family: var(--font-fam-family-poppins);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-20);
+    margin: 3rem 0 4rem;
+
+}
+.bio__name{
+    font-weight: var(--font-weight-semi-bold);
+
+}
+.bio__website{
+    color: var(--color-green);
+}
+.bio__facebook{
+    color: var(--color-light-blue);
+}
+.bio__linkedin{
+    color: var(--color-dark-blue);
+}
+.bio__instagram{
+    color: var(--color-red);
+}
+.bio__twitter{
+    color: var(--color-dark-green);
+}
+.bio__links{
+    font-size : 2.2rem;
+    font-weight:var(--font-weight-semi-bold);
+    text-decoration: none;
+}
+.say-hi-link{
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 0.7rem 4.7rem;
+}
+.found-out-link{
+    padding: 0.7rem 0;
+    margin-inline-start: 1.8rem;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0.5rem);
+    }
+    35%{
+        transform: translateY(-0.5rem);}
+    70%{
+        transform: translateY(0);}
+    100%{
+        transform: translateY(0);
+    }
+}
+.arrow{
+    display:inline-block;
+    animation: jump 0.8s infinite alternate ;
+}
+
+.bio__pic-contanat{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-self: end;
+    overflow: hidden;
+
+}
+.bio__pic-contanat::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color-box-img);
+    width: 100%;
+    height: 95%;
+    z-index: -1;
+    border-radius: 1rem;
+
+}
+.bio__pic{
+    width: 42.2rem;
+}
